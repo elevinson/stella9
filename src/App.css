@@ -1,0 +1,239 @@
+html {
+  background: black;
+  color: white;
+}
+.App {
+  text-align: center;
+}
+
+.stella9-header {
+  padding-top: 50px;
+}
+
+body h1 {
+  text-align: center;
+}
+
+.stella9-header h1 {
+  background: url("/images/disco.jpg") no-repeat center;
+  background-size: cover;
+  font-family: billabong, 'billabongregular';
+  font-weight: 100;
+  font-size: 13rem;
+  margin: 0;
+  letter-spacing: -1px;
+  text-shadow: 0px 4px 0 rgba(255, 8, 193, 1), 1px 1px 1px #000;
+}
+
+nav div {
+  position: fixed;
+  z-index: 100;
+}
+
+nav .large-menu {
+  width: 100%;
+  position: fixed;
+  transition: all 0.5s;
+}
+
+nav .large-menu ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.large-menu li {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  background: gray;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  width: 100%;
+}
+
+nav a:hover {
+  background: rgba(255, 8, 193, 1);
+  color: white;
+  transform: scale(1.1,1.1);
+  transition: 500ms;
+}
+
+.small-menu {
+  position: fixed;
+  width: 100%;
+}
+
+.small-menu [role="button"] {
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  background: gray;
+}
+
+.small-menu ul {
+  width: 100%;
+  margin: 35px 0 0 0;
+  padding: 0;
+  position: fixed;
+}
+
+.small-menu li {
+  display: block;
+  width: 100%;
+}
+
+.small-menu li a {
+  display: block;
+  padding: 20px 0;
+}
+
+.intro {
+  background: #424242;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.intro .text {
+  width: 80%;
+}
+
+.gigs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gigs h1 {
+  font-size: 60px;
+  text-shadow: 0px 4px 0 rgba(255, 8, 193, 1);
+}
+
+.gigs h2 {
+  margin: 100px 0;
+}
+
+.gig {
+  background: #0a1123;
+  border: 1px solid rgba(255, 8, 193, 1);
+  border-radius: 10px;
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.gig h3 {
+  font-size: 30px;
+  text-shadow: 0px 2px 0 rgba(255, 8, 193, 1);
+}
+
+.gig img {
+  float: left;
+  max-width: 300px;
+}
+
+.about-us {
+  width: 80%;
+  margin: 0 auto 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us h1 {
+  font-size: 60px;
+  text-shadow: 0px 4px 0 #ff5919;
+}
+
+.band-member {
+  background: #0a1123;
+  border: 1px solid #ff5919;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.band-member img {
+  width: 200px;
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+.band-member h3 {
+  font-size: 30px;
+  text-shadow: 0px 2px 0 #ff5919; 
+}
+
+.band-member p {
+  line-height: 1.5;
+}
+
+.contact-us {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us h1 {
+  font-size: 60px;
+  text-shadow: 0px 4px 0 #e17fea;
+}
+
+.contact-us .methods {
+  background: #0a1123;
+  border: 1px solid #e17fe9;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.gallery {
+  margin: 0 auto 100px;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.gallery h1 {
+  font-size: 60px;
+  text-shadow: 0px 4px 0 #ee2037;
+}
+
+#ReactGridGallery {
+  border: 1px solid #ee2037;
+  border-radius: 10px;
+  padding: 10px;
+}
+ 
+@font-face {
+  font-family: 'billabongregular';
+  src: url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot');
+  src: url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.woff') format('woff'),
+       url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf') format('truetype'),
+       url('https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.svg#billabongregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* mobile styling */
+@media only screen and (max-width: 600px) {
+  .stella9-header h1 {
+    font-size: 8rem;
+  }
+  .about-us h1 {
+    font-size: 45px;
+  }
+  .band-member .text {
+    float: left;
+  }
+}
